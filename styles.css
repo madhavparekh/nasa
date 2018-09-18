@@ -1,0 +1,105 @@
+body {
+	background-color: #171d24;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #2a383d;
+	padding: 25px;
+}
+#leftNav {
+	float: left;
+	font-size: 25px;
+}
+
+input {
+	border: 1px solid cyan;
+	height: 20px;
+	vertical-align: text-bottom;
+	background: #3c4b56;
+	margin-left: 10px;
+	width: 100px;
+	padding-right: 0;
+}
+#rightNav {
+	font-size: 12px;
+	float: right;
+}
+
+.fa {
+	color: white;
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+.navbar .hamburger {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-color: white;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+a:hover {
+	font-weight: bold;
+	color: gray;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin-bottom: 0;
+	color: cyan;
+}
+h2 {
+	padding-top: 100px;
+}
+h3 {
+	padding-top: 150px;
+}
+.header {
+	margin: auto;
+	width: 95%;
+}
+
+@media (max-width: 650px) {
+	.menu :not(:nth-last-child(-n + 2)) {
+		display: none;
+	}
+	.navbar .hamburger {
+		display: block;
+		float: right;
+	}
+}
+@media (max-width: 650px) {
+	.navbar .collapseMenu {
+		position: relative;
+		top: 30px;
+	}
+
+	.navbar .collapseMenu .hamburger {
+		position: absolute;
+		top: -30px;
+		right: 0;
+	}
+
+	.navbar .collapseMenu .app {
+		position: absolute;
+		top: -30px;
+		right: 28px;
+	}
+
+	.navbar .collapseMenu a {
+		text-align: right;
+		float: none;
+		display: block;
+	}
+}

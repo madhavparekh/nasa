@@ -39,6 +39,10 @@ input {
 	display: none;
 }
 
+#menu {
+	display: none;
+}
+
 a {
 	text-decoration: none;
 	text-decoration-color: white;
@@ -78,6 +82,9 @@ h3 {
 		display: block;
 		float: right;
 	}
+	#text {
+		display: none;
+	}
 }
 @media (max-width: 650px) {
 	.navbar .collapseMenu {
@@ -100,6 +107,10 @@ h3 {
 	.navbar .collapseMenu a {
 		text-align: right;
 		float: none;
+		display: block;
+	}
+
+	.navbar .collapseMenu #menu {
 		display: block;
 	}
 }
